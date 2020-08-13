@@ -80,7 +80,8 @@ label span {
     text-transform: uppercase;
 }
 
-input {
+input,
+textarea {
     display: block;
     width: 100%;
     margin-top: 5px;
@@ -89,6 +90,11 @@ input {
     border-bottom: 1px solid rgba(109, 93, 93, 0.4);
     text-align: center;
     font-family: 'Nunito', sans-serif;
+}
+
+textarea {
+    resize: none;
+    text-align: left !important;
 }
 
 button {
@@ -312,11 +318,7 @@ button {
     transform: translate3d(0, 0, 0);
 }
 
-
-
-
-
-
+/* loader */
 
 #loader {
     position: absolute;
@@ -340,9 +342,9 @@ button {
 .animate-bottom {
     position: relative;
     -webkit-animation-name: animatebottom;
-    -webkit-animation-duration: 1s;
+    -webkit-animation-duration: 1.5s;
     animation-name: animatebottom;
-    animation-duration: 1.5s
+    animation-duration: 1.5s;
 }
 
 @-webkit-keyframes animatebottom {
